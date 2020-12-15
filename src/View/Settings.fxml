@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="265.0" prefWidth="846.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Settings">
+   <children>
+      <AnchorPane layoutX="7.0" layoutY="7.0" prefHeight="254.0" prefWidth="297.0">
+         <children>
+            <Label layoutX="24.0" layoutY="30.0" text="Name" />
+            <Label layoutX="24.0" layoutY="69.0" text="Password" />
+            <Label layoutX="24.0" layoutY="107.0" text="Is Admin?" />
+            <TextField fx:id="NameForAdd" layoutX="96.0" layoutY="25.0" />
+            <TextField fx:id="PassForAdd" layoutX="96.0" layoutY="64.0" />
+            <TextField fx:id="IsAdmin" layoutX="96.0" layoutY="102.0" />
+            <Button layoutX="97.0" layoutY="194.0" mnemonicParsing="false" onAction="#AddUser" text="Add User" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="TableUser" layoutX="597.0" layoutY="6.0" prefHeight="254.0" prefWidth="232.0">
+        <columns>
+          <TableColumn fx:id="IdUser" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="NameUser" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="Admin" prefWidth="75.0" text="Admin" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="311.0" layoutY="7.0" prefHeight="254.0" prefWidth="273.0">
+         <children>
+            <Label layoutX="112.0" layoutY="50.0" text="Name " />
+            <TextField fx:id="NameForDelete" layoutX="43.0" layoutY="103.0" />
+            <Button layoutX="85.0" layoutY="196.0" mnemonicParsing="false" onAction="#DeleteUser" text="Delete User" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="560.0" prefWidth="835.0" style="-fx-background-color: f48fb1;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CheckIn">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="16.0" prefHeight="475.0" prefWidth="364.0" style="-fx-background-color: ffc1e3;">
+         <children>
+            <Label layoutX="123.0" layoutY="14.0" prefHeight="36.0" prefWidth="125.0" text="Personal Data">
+               <font>
+                  <Font name="Bodoni MT" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="71.0" text="Name" />
+            <Label layoutX="27.0" layoutY="108.0" text="Phone" />
+            <Label layoutX="27.0" layoutY="146.0" text="Email" />
+            <Label layoutX="27.0" layoutY="184.0" text="Address" />
+            <Label layoutX="27.0" layoutY="221.0" text="City" />
+            <Label layoutX="27.0" layoutY="260.0" text="Nationality" />
+            <Label layoutX="27.0" layoutY="298.0" text="Passport No" />
+            <TextField fx:id="NameId" layoutX="133.0" layoutY="66.0" />
+            <TextField fx:id="PhoneID" layoutX="133.0" layoutY="103.0" />
+            <TextField fx:id="AdressId" layoutX="133.0" layoutY="179.0" />
+            <TextField fx:id="CityId" layoutX="133.0" layoutY="216.0" />
+            <TextField fx:id="NationalityId" layoutX="133.0" layoutY="255.0" />
+            <TextField fx:id="EmailId" layoutX="133.0" layoutY="141.0" />
+            <TextField fx:id="PassportNo" layoutX="133.0" layoutY="293.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="436.0" layoutY="17.0" prefHeight="211.0" prefWidth="376.0" style="-fx-background-color: ffc1e3;">
+         <children>
+            <TextField fx:id="CardNumberId" layoutX="162.0" layoutY="101.0" />
+            <TextField fx:id="CVCCode" layoutX="162.0" layoutY="148.0" />
+            <Label layoutX="150.0" layoutY="23.0" text="Payment">
+               <font>
+                  <Font name="Bodoni MT" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="106.0" text="Card Number" />
+            <Label layoutX="27.0" layoutY="153.0" text="CVC Code" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="436.0" layoutY="247.0" prefHeight="244.0" prefWidth="376.0" style="-fx-background-color: ffc1e3;">
+         <children>
+            <Label layoutX="139.0" layoutY="26.0" text="Room Data">
+               <font>
+                  <Font name="Bodoni MT" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="72.0" text="Room Type" />
+            <Label layoutX="25.0" layoutY="99.0" text="Room Capacity" />
+            <Label layoutX="25.0" layoutY="128.0" text="Check in date " />
+            <Label layoutX="25.0" layoutY="167.0" text="Check out date" />
+            <Label layoutX="25.0" layoutY="210.0" text="Room ID:" />
+            <CheckBox fx:id="Economy" layoutX="135.0" layoutY="72.0" mnemonicParsing="false" text="Economy" />
+            <CheckBox fx:id="Normal" layoutX="228.0" layoutY="72.0" mnemonicParsing="false" text="Normal" />
+            <CheckBox fx:id="Vip" layoutX="312.0" layoutY="72.0" mnemonicParsing="false" text="VIP" />
+            <CheckBox fx:id="Simple" layoutX="135.0" layoutY="99.0" mnemonicParsing="false" text="1" />
+            <CheckBox fx:id="Double" layoutX="228.0" layoutY="99.0" mnemonicParsing="false" text="2" />
+            <CheckBox fx:id="Triple" layoutX="312.0" layoutY="99.0" mnemonicParsing="false" text="3" />
+            <DatePicker fx:id="CheckIn" layoutX="135.0" layoutY="123.0" />
+            <DatePicker fx:id="CheckOut" layoutX="135.0" layoutY="162.0" />
+            <TextField fx:id="RoomId" layoutX="135.0" layoutY="205.0" prefHeight="31.0" prefWidth="73.0" />
+            <Button layoutX="280.0" layoutY="205.0" mnemonicParsing="false" onAction="#Search" style="-fx-background-color: ffc1e3;" text="Search" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="336.0" layoutY="510.0" mnemonicParsing="false" onAction="#Clear" prefHeight="36.0" prefWidth="67.0" style="-fx-background-color: ffc1e3;" text="Clear" />
+      <Button layoutX="418.0" layoutY="510.0" mnemonicParsing="false" onAction="#Submit" prefHeight="36.0" prefWidth="67.0" style="-fx-background-color: ffc1e3;" text="Submit" />
+   </children>
+</AnchorPane>

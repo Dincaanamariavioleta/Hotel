@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="635.0" prefWidth="1000.0" style="-fx-background-color: ffb2dd;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Controller_2">
+   <children>
+      <AnchorPane prefHeight="119.0" prefWidth="1241.0" style="-fx-background-color: c94f7c;">
+         <children>
+            <ImageView fitHeight="69.0" fitWidth="67.0" layoutX="65.0" layoutY="22.0">
+               <image>
+                  <Image url="@../../../../../AppData/Local/Temp/icons8_hotel_40px.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="1049.0" layoutY="44.0" mnemonicParsing="false" onAction="#Settings" prefHeight="31.0" prefWidth="98.0" style="-fx-background-color: ffb2dd; -fx-background-radius: 50;" text="Settings" />
+            <Label layoutX="483.0" layoutY="17.0" prefHeight="76.0" prefWidth="257.0" text="Home Page">
+               <font>
+                  <Font name="Franklin Gothic Book" size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="119.0" prefHeight="568.0" prefWidth="200.0" style="-fx-background-color: ff80ab;">
+         <children>
+            <Button layoutX="45.0" layoutY="523.0" mnemonicParsing="false" onAction="#Logout" prefHeight="31.0" prefWidth="98.0" style="-fx-background-color: ffb2dd; -fx-background-radius: 50;" text="Log out" />
+            <AnchorPane layoutX="7.0" layoutY="7.0" prefHeight="119.0" prefWidth="186.0" style="-fx-background-color: ffb2dd;">
+               <children>
+                  <Label layoutX="77.0" layoutY="27.0" text="Name" />
+                  <TextField fx:id="NameId" layoutX="50.0" layoutY="52.0" prefHeight="31.0" prefWidth="85.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="7.0" layoutY="135.0" prefHeight="119.0" prefWidth="186.0" style="-fx-background-color: ffb2dd;">
+               <children>
+                  <Label layoutX="51.0" layoutY="34.0" text="Available rooms" />
+                  <TextField fx:id="AvailableRooms" layoutX="73.0" layoutY="60.0" prefHeight="31.0" prefWidth="40.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="7.0" layoutY="262.0" prefHeight="119.0" prefWidth="186.0" style="-fx-background-color: ffb2dd;">
+               <children>
+                  <Label layoutX="50.0" layoutY="26.0" text="Reserved rooms" />
+                  <TextField fx:id="ReservedRooms" layoutX="73.0" layoutY="50.0" prefHeight="31.0" prefWidth="40.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Button layoutX="276.0" layoutY="144.0" mnemonicParsing="false" onAction="#CheckIn" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ff80ab;" text="Check In" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="602.0" layoutY="144.0" mnemonicParsing="false" onAction="#RoomBooking" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ff80ab;" text="Room Booking">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="930.0" layoutY="144.0" mnemonicParsing="false" onAction="#Rooms" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ff80ab;" text="Rooms">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="276.0" layoutY="433.0" mnemonicParsing="false" onAction="#CheckOut" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ff80ab;" text="Check Out">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="939.0" layoutY="433.0" mnemonicParsing="false" onAction="#Guests" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ff80ab;" text="Guests">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="608.0" layoutY="433.0" mnemonicParsing="false" onAction="#CancelBooking" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: ff80ab;" text="Cancel Booking">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <ImageView layoutX="344.0" layoutY="454.0">
+         <image>
+            <Image url="@../../../../../AppData/Local/Temp/icons8_hotel_check_out_50px.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="344.0" layoutY="165.0">
+         <image>
+            <Image url="@../../../../../AppData/Local/Temp/icons8_hotel_check_in_50px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="41.0" fitWidth="40.0" layoutX="1010.0" layoutY="182.0">
+         <image>
+            <Image url="@../../../../../AppData/Local/Temp/icons8_hotel_room_key_30px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="41.0" fitWidth="40.0" layoutX="682.0" layoutY="170.0">
+         <image>
+            <Image url="@../../../../../AppData/Local/Temp/icons8_event_accepted_24px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="41.0" fitWidth="40.0" layoutX="682.0" layoutY="459.0">
+         <image>
+            <Image url="@../../../../../AppData/Local/Temp/icons8_event_declined_24px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="1014.0" layoutY="465.0">
+         <image>
+            <Image url="@../../../../../AppData/Local/Temp/icons8_reception_50px.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
